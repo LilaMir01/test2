@@ -1,0 +1,23 @@
+.back {
+    background-color: rgb(223, 189, 178);
+}
+.back1 {
+    background-color: rgb(255, 212, 218);
+}
+.back2 {
+    background-color: rgb(218, 184, 226);
+}
+.color {
+    color: blueviolet;
+}
+.weight {
+    font-size: 10pt
+}
+table {
+    border-collapse: collapse;
+    font-size: 15pt
+}
+td {
+    border: 2px solid rgb(221, 126, 255);
+    padding: 5px;
+}

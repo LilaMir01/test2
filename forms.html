@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="handler.php">
+		<p> <input name="login"> <input type="password" name="pass"> </p>
+		<p><input type="submit"></p>
+	</form>
+	<form>
+		<p><input name="a"><input type="submit"></p>
+	</form>
+	<p><iframe name="area" width="500" height="200"></iframe></p>
+	<form action="handler.php" target="area">
+		<p><input placeholder="Введите текст" name="text"></p>
+		<p><input type="submit" value="Отправить"></p>
+	</form>
+
+	<form action="handler.php" target="_blank">
+		<p><input placeholder="Введите Ваше имя" name="text"></p> <p> <input placeholder="Введите Вашу фамилию" name="text"></p>
+		<p><input type="submit" value="Отправить"> </p>
+	</form>
+	<form id="auth" action="handler.php" method="post"></form>
+	<p>Привет!</p>
+	<p><input name="login" form="auth">
+		<input type="password" name="pass" form="auth"></p>
+		<p><input type="submit" form="auth"></p>
+
+	 <p>
+	 	<form>
+	 			<p><strong>Как Вас зовут?</strong></p>
+	 		<p> <input name="name" maxlength="25" value="Вася"></p>
+	 	</form>
+	 </p>
+
+
+	 <p>
+	 	<form>
+	 		<p> <strong> Введите Ваш город</strong></p>
+	 		<p> <input name="city" list="city"></p>
+	 	</form>
+	 	<datalist id="city">
+	 		<option>Волгоград</option>
+	 		<option>Сергиев Посад</option>
+	 		<option>Воронеж</option>
+	 		<option>Екатеринбург</option>
+	 		<option>Краснярск</option>
+	 		<option>Москва</option>
+	 		<option>Нижний Новгород</option>
+	 		<option>Новосибирск</option>
+	 	</datalist>
+	 </p>
+
+	<form action="handler.php">
+		<p> <strong> Логин:</strong>
+		<input maxlength="25" size="40" name="login"></p>
+		<p> <strong>Пароль:</strong>
+			<input type="password" maxlength="25" size="40" name="password"></p>
+		<p> <input type="submit" value="Войти"></p>
+	</form>
+
+	<form action="handler.php">
+		<p><strong>Введите Ваш отзыв</strong></p>
+		<p><textarea name="comment" id=""></textarea></p>
+		<p><input type="submit" required ></p>
+	</form>
+
+	<form action="handler.php">
+		<p><strong>Отредактируйте Ваш отзыв</strong> </p>
+		<p><textarea name="edit" rows="3" cols="30">
+			Lorem, ipsum dolor sit amet.
+			Lorem ipsum dolor sit.
+		</textarea></p>
+		<p><input type="submit"></p>
+	</form>
+
+	<form>
+		<p> <input type="button" value="Нажми на меня"></p>
+	</form>
+
+	<form>
+		<p><button>Кнопка с текстом</button>
+		<button>
+			<img src="C:\Users\lilmi\Desktop\Project_1\img\smile.jpg" alt="" >
+			Кнопка с рисунком
+		</button> </p>
+	</form>
+
+	<form>
+		<p><input name="login"></p>
+		<p><input type="submit"></p>
+	</form>
+
+	<form>
+		<p><input value="Введите текст"></p>
+		<p><input type="submit">
+			<input type="reset"></p>
+	</form>
+
+	<form> 
+		<p> <b>Какое у Вас состояние разума?</b></p>
+		<p><input name="dzen" type="radio" value="nedzen">Не дзен</p>
+		<p><input name="dzen" type="radio" value="dzen">Дзен</p>
+		<p><input name="dzen" type="radio" value="pdzen">Полный дзен</p>
+		<p><input type="submit" value="Выбрать"></p>
+	</form>
+	<form >
+		<p>В каких годах произошли самые изввестные извержения вулкана Кракатау?</p>
+		<p><input type="checkbox" name="a" value="1417">1417</p>
+		<p><input type="checkbox" name="a" value="1680">1680</p>
+		<p><input type="checkbox" name="a" value="1883">1883</p>
+		<p><input type="checkbox" name="a" value="1934">1934</p>
+		<p><input type="checkbox" name="a" value="2010">2010</p>
+		<p><input type="submit" value="Отправить"></p>
+	</form>
+
+	<form enctype="myltipart/form-data" method="post">
+		<p><input type="file" name="f">
+			<input type="submit" value="Отправить"></p>
+	</form>
+
+	<form enctype="myltipart/form-data-data" method="post" >
+		<p>ЗАГРУЗИТЕ вАШИ ФОТОГРАФИИ НА СЕРВЕР</p>
+		<p><input type="file" name="photo" multiple accept="image/*, image/, jpeg">
+			<input type="submit" value="Отправить"></p>
+
+	</form>
+
+	<form>
+		<select name="day">
+			<option value="mon">Пн</option>
+			<option value="tue">Вт</option>
+			<option value="wed">Ср</option>
+			<option value="thu">Чт</option>
+			<option value="fri">Пт</option>
+			<option value="sat">Сб</option>
+			<option value="sun">Вс</option>
+
+		</select>
+	</form>
+
+	<form>
+		<p><select name="food">
+			<optgroup label="русская кухня">
+				<option value="r1">закуска б</option>
+				<option value="r2">раки</option>
+				<option value="r3">бмточки</option>	
+			</optgroup>
+			<optgroup label="белорусская">
+				<option value="u1">блины</option>
+				<option value="u2">суп</option>
+				<option value="u3">драники</option>
+			</optgroup>
+		</select></p>
+	 <p><input type="submit" value="Отправить"></p>
+	</form>
+<h3>Анкета</h3>
+<form action="#">
+	<p> Фамилия: <input placeholder="Фамилия"></p>
+	<p> Имя: <input placeholder="Имя"></p>
+	<p> Отчество: <input placeholder="Отчество"></p>
+	<p>Введите пароль: <input type="password"></p>
+	<p>Введите дату рождения: <select name="day" >
+		<option value="01">01</option>
+		<option value="02">02</option>
+		<option value="03">03</option>
+		<option value="04">04</option>
+		<option value="05">05</option>
+		<option value="06">06</option>
+		<option value="07">07</option>
+		<option value="08">08</option>
+		<option value="09">09</option>
+	</select>
+	<select name="mons">
+		<option value="ja">январь</option>
+		<option value="f">февраль</option>
+		<option value="ma">март</option>
+		<option value="a">апрель</option>
+		<option value="m">май</option>
+		<option value="i">июнь</option>
+		<option value="il">июль</option>
+		<option value="av">август</option>
+		<option value="s">сентябрь</option>
+		<option value="o">октябрь</option>
+		<option value="n">ноябрь</option>
+		<option value="d">декабрь</option>
+	</select>
+	<select name="years">
+		<option value="2004">2004</option>
+		<option value="2005">2005</option>
+		<option value="2006">2006</option>
+	</select>
+</p> 
+<p>Укажите удобный способ для связи: </p>
+<p><input type="radio" name="a" value="dom">Домашний телефон</p>
+<p><input type="radio" name="a" value="rab">Рабочий телефон</p>
+<p><input type="radio" name="a" value="ll">Электронная почта</p>
+<p>Укажите ваше образование</p>
+<p><select name="o">
+	<option value="v">высшее</option>
+	<option value="v">среднее</option>
+</select></p>
+<p>Немного о себе</p>
+<p> <textarea rows="20" cols="30"></textarea></p>
+<p><input type="submit"></p>
+
+</form>
+
+
+
+
+
+</body>
+</html>
